@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navnavnav"
+    app:startDestination="@id/gameGameFragment">
+
+    <fragment
+        android:id="@+id/gameGameFragment"
+        android:name="com.ngelgames.herocantar.gimigimipack.GameGameFragment"
+        android:label="fragment_game_game"
+        tools:layout="@layout/fragment_game_game" >
+        <action
+            android:id="@+id/action_gameGameFragment_to_someRuuulesFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/someRuuulesFragment" />
+        <action
+            android:id="@+id/action_gameGameFragment_to_photosFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:destination="@id/photosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/someRuuulesFragment"
+        android:name="com.ngelgames.herocantar.gimigimipack.SomeRuuulesFragment"
+        android:label="fragment_some_ruuules"
+        tools:layout="@layout/fragment_some_ruuules" />
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.ngelgames.herocantar.gimigimipack.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos" />
+</navigation>
